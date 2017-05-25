@@ -1,7 +1,8 @@
 # `ClientAsyncResponseReader` mismatched placement new/delete demonstration program
 
 This repository demonstrates a build warning issued by Visual C++ 2016 x64
-from gRPC++'s `ClientAsyncResponseReader`.
+from gRPC++'s `ClientAsyncResponseReader`. This has been logged as
+[grpc issue #11301](https://github.com/grpc/grpc/issues/11301).
 
 Pre-requisites:
 
