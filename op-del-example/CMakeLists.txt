@@ -1,0 +1,6 @@
+add_executable(op-del-example op-del-example.cpp)
+if (MSVC)
+  target_compile_definitions (op-del-example PRIVATE -D_WIN32_WINNT=0x0600)
+endif()
+target_link_libraries(op-del-example PRIVATE grpc++)
+target_include_directories(op-del-example PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../grpc/include)
